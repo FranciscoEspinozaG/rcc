@@ -1,0 +1,34 @@
+nav {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+nav .navbar-brand img {
+  height: 50px;
+}
+nav .wsp-link {
+  color: #25D366;
+  transition: 0.3s ease all;
+}
+nav .wsp-link:hover {
+  color: #128C7E;
+}
+.slider-home .slide-item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slider-home .slide-item__contenido {
+  height: 400px;
+  background: #0000008f;
+}
+.slider-home .slide-item h2 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.slider-home .slide-item p {
+  padding: 5px 15px;
+  box-sizing: border-box;
+  background: #000;
+  color: #fff;
+  font-size: 1rem;
+}
