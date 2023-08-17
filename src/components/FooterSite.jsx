@@ -2,7 +2,7 @@ export const FooterSite = () => {
   return (
     <>
       <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top bg-dark text-white">
-        <div className="container-fluid d-flex justify-content-around">
+        <div className="container-fluid d-flex flex-wrap justify-content-around">
 
           <div className="col-md-4 d-flex align-items-center">
             <a href="#" className="mb-3 me-2 mb-md-0 text-body-primary text-decoration-none lh-1">
@@ -28,6 +28,10 @@ export const FooterSite = () => {
               </a>
             </li>
           </ul>
+
+          <div className="d-flex justify-content-center my-4 col-12">
+              <img src="./img/transbank-red-compra-tarjeta-debito-credito.webp" alt="Mecanico tarjeta de credito" className="img-fluid col-8 col-md-2 m-auto" />
+          </div>
         </div>
       </footer>
     </>

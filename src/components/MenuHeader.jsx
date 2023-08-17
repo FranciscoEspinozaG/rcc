@@ -1,8 +1,10 @@
+import { useGerarLinkWsp } from "../hooks/useGerarLinkWsp";
+
 export const MenuHeader = () => {
-  let linkWsp = 'https://wa.me/',
-    numeroEmpresa = '56979937858',
-    textoLinkWhatsapp = 'Hola! Necesito un mecánico a domicilio',
-    wspLink = `${linkWsp}${numeroEmpresa}?text=${textoLinkWhatsapp.replace(/\s/g, '%20')}`;
+
+  const textoLinkWhatsapp = 'Hola! Necesito un mecánico a domicilio';
+
+  const {linkWsp} = useGerarLinkWsp(textoLinkWhatsapp);
 
   return (
     <>
@@ -24,7 +26,7 @@ export const MenuHeader = () => {
               <a className="nav-link disabled" aria-disabled="true">Agenda</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link wsp-link" href={wspLink} target='_blank' rel="noreferrer" aria-expanded="false">
+              <a className="nav-link wsp-link" href={linkWsp} target='_blank' rel="noreferrer" aria-expanded="false">
                 <p className="fw-bold">WhatsApp <i className="bi bi-whatsapp"></i></p>
               </a>
             </li>

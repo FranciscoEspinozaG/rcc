@@ -12,26 +12,49 @@ export const SliderHome = () => {
         slidesToScroll: 1
     }
 
+    let servicios = [
+        {
+            titulo: 'Motogrúa',
+            bajada: 'Traslado en la RM y al rededores',
+            img: './img/hombre-intenta-arreglar-moto-al-costado-carretera.jpg' ,
+            textoBoton: 'Agendar',
+            textoWsp: 'Hola, necesito el servicio de Motogrúa, tienes disponibilidad?',
+            activo: true
+        },
+        {
+            titulo: 'Escanner a domicilio',
+            bajada: 'Todas las marcas y modelos | OBD II',
+            img: './img/mechanic-tools.jpg',
+            textoBoton: 'Consultar',
+            activo: true
+        },{
+            titulo: 'Servicio de Revisión Técnica',
+            bajada: 'Gestión completa desde la puerta de su casa',
+            img: './img/mechanic-work.jpg',
+            activo: true
+        }
+        // ,{
+        //     titulo: 'Electricidad Automotriz',
+        //     bajada: 'Todo tipo de cableado para tu vehículo',
+        //     activo: false
+        // }
+    ]
+
     return (
         <>
         <Slider {...setting} className='slider-home'>
-            <SlideItem 
-                titulo='Motogrúa'
-                img='./img/hombre-intenta-arreglar-moto-al-costado-carretera.jpg' 
-                boton='Agendar'
-                bajada='Traslado en la RM y al rededores'
-                linkBoton='//wa.me/56979937858?text=Hola, necesito el servicio de Motogrúa, tienes disponibilidad?'
-            />
-            <SlideItem
-                titulo='Escanner a domicilio'
-                img='./img/mechanic-tools.jpg'
-                bajada='Todas las marcas y modelos | OBD II'
-                boton='Consultar'
-            />
-            <SlideItem
-                titulo='Servicio de Revisión Técnica'
-                img='./img/mechanic-work.jpg'
-            />
+            {
+                servicios.map( ({titulo, bajada, img, textoBoton, textoWsp}) => (
+                    <SlideItem
+                        key={titulo}
+                        titulo={titulo}
+                        bajada={bajada}
+                        img={img}
+                        textoBoton={textoBoton}
+                        textoWsp={textoWsp}
+                    />
+                ))
+            }
         </Slider>
         </>
     )
