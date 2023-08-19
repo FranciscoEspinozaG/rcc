@@ -1,4 +1,9 @@
+import { useGerarLinkWsp } from "../hooks/useGerarLinkWsp";
+
 export const SeoHomeSite = ({clases = ''}) => {
+
+    const {linkWsp} = useGerarLinkWsp();
+
     return (
     <>
         <section className={clases}>
@@ -15,7 +20,7 @@ export const SeoHomeSite = ({clases = ''}) => {
                 <h3 className="text-center">Sigueme en mis redes sociales</h3>
                 <ul className="justify-content-center list-unstyled d-flex gap-3">
                     <li>
-                        <a className="text-body-primary text-danger" href="wa.me/56979937858">
+                        <a className="text-body-primary text-danger" href={linkWsp}>
                             <i className="bi bi-whatsapp"></i>
                         </a>
                     </li>

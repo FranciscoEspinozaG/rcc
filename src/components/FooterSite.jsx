@@ -1,4 +1,11 @@
+import { useGerarLinkWsp } from "../hooks/useGerarLinkWsp";
+
 export const FooterSite = () => {
+
+  const textoLinkWhatsapp = 'Hola! Necesito hacer una consulta';
+
+  const {linkWsp} = useGerarLinkWsp(textoLinkWhatsapp);
+
   return (
     <>
       <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top bg-dark text-white">
@@ -13,7 +20,7 @@ export const FooterSite = () => {
 
           <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
             <li className="ms-3">
-              <a className="text-body-primary text-danger" href="wa.me/56979937858">
+              <a className="text-body-primary text-danger" href={linkWsp}>
                 <i className="bi bi-whatsapp"></i>
               </a>
             </li>

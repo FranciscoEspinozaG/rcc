@@ -14,15 +14,15 @@ export const SliderHome = () => {
 
     let servicios = [
         {
-            titulo: 'Motogrúa',
-            bajada: 'Traslado en la RM y al rededores',
+            titulo: 'Mantención y reparación',
+            bajada: 'Mantención y reparación automotríz',
             img: './img/hombre-intenta-arreglar-moto-al-costado-carretera.jpg' ,
             textoBoton: 'Agendar',
             textoWsp: 'Hola, necesito el servicio de Motogrúa, tienes disponibilidad?',
             activo: true
         },
         {
-            titulo: 'Escanner a domicilio',
+            titulo: 'Escanner',
             bajada: 'Todas las marcas y modelos | OBD II',
             img: './img/mechanic-tools.jpg',
             textoBoton: 'Consultar',
@@ -33,11 +33,6 @@ export const SliderHome = () => {
             img: './img/mechanic-work.jpg',
             activo: true
         }
-        // ,{
-        //     titulo: 'Electricidad Automotriz',
-        //     bajada: 'Todo tipo de cableado para tu vehículo',
-        //     activo: false
-        // }
     ]
 
     return (

@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 
-export const useGerarLinkWsp = (textowsp) => {
+export const useGerarLinkWsp = (textowsp = 'Hola! Tengo una consulta') => {
     const [linkWsp, setLinkWsp] = useState('');
     
     const baseLinkWsp = 'https://wa.me/56979937858?text=';

@@ -2,7 +2,7 @@ import { useGerarLinkWsp } from "../hooks/useGerarLinkWsp";
 
 export const MenuHeader = () => {
 
-  const textoLinkWhatsapp = 'Hola! Necesito un mecánico a domicilio';
+  const textoLinkWhatsapp = 'Hola! Tengo una consulta';
 
   const {linkWsp} = useGerarLinkWsp(textoLinkWhatsapp);
 
