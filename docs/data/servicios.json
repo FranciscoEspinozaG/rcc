@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "titulo": "Motogrúa",
+        "bajada": "Traslado en la RM y al rededores",
+        "img": "./img/hombre-intenta-arreglar-moto-al-costado-carretera.jpg",
+        "textoBoton": "Agendar",
+        "textoWsp": "Hola, necesito el servicio de Motogrúa, tienes disponibilidad?",
+        "activo": true
+    },
+    {
+        "id": 2,
+        "titulo": "Escanner a domicilio",
+        "bajada": "Todas las marcas y modelos | OBD II",
+        "img": "./img/mechanic-tools.jpg",
+        "textoBoton": "Consultar",
+        "activo": true
+    },
+    {
+        "id": 3,
+        "titulo": "Servicio de Revisión Técnica",
+        "bajada": "Gestión completa desde la puerta de su casa",
+        "img": "./img/mechanic-work.jpg",
+        "activo": true
+    }
+]
